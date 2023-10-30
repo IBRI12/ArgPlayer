@@ -175,8 +175,6 @@ public abstract class ArgPlayerViewRoot extends RelativeLayout implements View.O
     }
 
     private void setTvText(final boolean tvNow, final String text) {
-        TextView tv = (tvNow ? tvTimeNow : tvTimeTotal);
-        ((Activity) context).runOnUiThread(() -> tv.setText(String.format("%s", text)));
     }
 
     private void changeRepeatButton() {
