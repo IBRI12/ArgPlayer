@@ -172,29 +172,7 @@ public abstract class ArgMusicPlayer {
     protected void onClick(View v) {
         if (v != null) {
             int i = v.getId();
-            if (i == R.id.btnPlayPause) {
-                switch (service.getAudioState()) {
-                    case NO_ACTION:
-                        play(getCurrentAudio());
-                        break;
-                    case PAUSED:
-                        service.continuePlaying();
-                        break;
-                    case STOPPED:
-                        service.replayAudio(getCurrentAudio());
-                        break;
-                    case PLAYING:
-                        pause();
-                        break;
-                }
-            } else if (i == R.id.btnRepeat) {
-                setPlaylistRepeat(!service.getRepeatPlaylist());
-                changeRepeatButton();
-            } else if (i == R.id.btnNext) {
-                playNextAudio();
-            } else if (i == R.id.btnPrev) {
-                playPreviousAudio();
-            } else if (i == R.id.arg_music_error_view) {
+if (i == R.id.arg_music_error_view) {
                 stopProgress();
                 hideErrorView();
             }
