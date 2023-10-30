@@ -61,21 +61,15 @@ public abstract class ArgPlayerViewRoot extends RelativeLayout implements View.O
         if (isInEditMode()) return;
         this.context = context;
         // RelativeLayout panelLayout = findViewById(R.id.arg_music_panel_layout);
-        this.tvTimeNow = findViewById(R.id.tvTimeNow);
-        this.tvTimeTotal = findViewById(R.id.tvTimeTotal);
-        this.btnPlayPause = findViewById(R.id.btnPlayPause);
+
         this.btnPrev = findViewById(R.id.btnPrev);
         this.btnNext = findViewById(R.id.btnNext);
-        this.btnRepeat = findViewById(R.id.btnRepeat);
-        this.progress = findViewById(R.id.arg_music_progress);
+     
         this.errorView = findViewById(R.id.arg_music_error_view);
         this.seekBar = findViewById(R.id.seekBar);
 
-        this.seekBar.setOnSeekBarChangeListener(this);
-        this.btnPlayPause.setOnClickListener(this);
         this.btnNext.setOnClickListener(this);
         this.btnPrev.setOnClickListener(this);
-        this.btnRepeat.setOnClickListener(this);
         this.errorView.setOnClickListener(this);
 
 
