@@ -117,7 +117,6 @@ public abstract class ArgPlayerViewRoot extends RelativeLayout implements View.O
 
             @Override
             protected void setSeekBarProgresss(int progress) {
-                seekBar.setProgress(progress);
             }
 
             @Override
